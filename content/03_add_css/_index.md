@@ -1,6 +1,6 @@
 +++
 archetype = "chapter"
-title = "3. Agregar CSS"
+title = "3. CSS"
 weight = 3
 +++
 
