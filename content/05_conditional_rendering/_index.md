@@ -63,4 +63,19 @@ function UserGreetings(props) {
 ...
 ```
 
-Es buena práctica hacer _typechecking_ siempre que se reciben `props`. Así al menos tendremos un _warning_ por consola
+Es buena práctica hacer _typechecking_ y poner valores por defecto siempre que se reciben `props`. Así al menos tendremos un _warning_ por consola
+
+```jsx {title="UserGreetings.jsx"}
+import PropTypes from 'prop-types';
+...
+UserGreetings.propTypes = {
+  isLoggedIn: PropTypes.bool,
+  username: PropTypes.string
+}
+
+UserGreetings.defaultProps = {
+  isLoggedIn: false,
+  username: "Invitado"
+}
+...
+```

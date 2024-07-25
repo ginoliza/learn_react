@@ -46,7 +46,7 @@ Para mejor visualización:
 ```
 
 ## propTypes
-Esta propiedad realiza _typechecking_ de los valores. Importar `PropTypes` y usar con `.propTypes`
+Esta propiedad realiza _typechecking_ de los valores. Importar `PropTypes` y usar con `.propTypes`. Usar afuera de la función
 ```jsx {title="Student.jsx"}
 import PropTypes from 'prop-types';
 ...
@@ -65,7 +65,7 @@ Student.propTypes = {
 Mediante la consola se visualizará un _Warning_ debido al string `age="30"`, que deberia ser un número `age={30}`
 
 ## defaultProps
-Los valores pueden ser predeterminados en caso no se pase nada
+Los valores pueden ser predeterminados en caso no se pase nada. Usar afuera de la función
 
 ```jsx {title="Student.jsx"}
 ...
