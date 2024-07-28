@@ -78,7 +78,6 @@ import Footer from "./Footer.jsx"
 import Food from "./Food.jsx"
 
 function App() {
-  
   return (
     <>
       <Header/>
@@ -92,21 +91,20 @@ export default App
 ```
 
 ```jsx {title="Header.jsx"}
-function Header(){
-    return (
-        <>
-            <h1>My website</h1>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </>
-        
-    )
+function Header() {
+  return (
+    <>
+      <h1>My website</h1>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </>
+  );
 }
 
 export default Header
@@ -114,26 +112,26 @@ export default Header
 
 ```jsx {title="Footer.jsx"}
 function Footer(){
-    return(
-        <p>&copy; {new Date().getFullYear()} Your website name</p>
-    )
+  return(
+      <p>&copy; {new Date().getFullYear()} Your website name</p>
+  )
 }
 
 export default Footer
 ```
 
 ```jsx {title="Food.jsx"}
-function Food(){
-    const food1 = "Apple"
-    const food2 = "Orange"
-    const food3 = "Banana"
-    return(
-        <ul>
-            <li>{food1}</li>
-            <li>{food2.toLowerCase()}</li>
-            <li>{food3.toUpperCase()}</li>
-        </ul>
-    )
+function Food() {
+  const food1 = "Apple";
+  const food2 = "Orange";
+  const food3 = "Banana";
+  return (
+    <ul>
+      <li>{food1}</li>
+      <li>{food2.toLowerCase()}</li>
+      <li>{food3.toUpperCase()}</li>
+    </ul>
+  );
 }
 
 export default Food

@@ -18,7 +18,6 @@ Crear un componente `Card.jsx`, importarlo en `App.jsx` y usarlo dentro del retu
 import Card from "./Card"
 
 function App() {
-
   return (    
     <Card/>      
   )
@@ -33,15 +32,15 @@ Card es un elemento que contiene una imagen, un título y un texto descriptivo. 
 import profilePic from './assets/profile.jpg'
 
 function Card() {
-    return(
-        <div className="card">
-            {/* Si no se tiene una imagen disponible se puede usar: */}
-            {/* https://via.placeholder.com/150 */}
-            <img className='card-image' src={profilePic} alt="profile picture" />
-            <h2 className='card-title' >Gino Liza</h2>
-            <p className='card-text'>I learn courses and play guitar</p>
-        </div>
-    )
+  return(
+    <div className="card">
+      {/* Si no se tiene una imagen disponible se puede usar: */}
+      {/* https://via.placeholder.com/150 */}
+      <img className='card-image' src={profilePic} alt="profile picture" />
+      <h2 className='card-title' >Gino Liza</h2>
+      <p className='card-text'>I learn courses and play guitar</p>
+    </div>
+  )
 }
 
 export default Card
