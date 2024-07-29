@@ -37,7 +37,9 @@ function Component() {
 }
 export default Component
 ```
-Al hacer esto las demás propiedades desaparecen y sólo queda la propiedad actualizada en la función _setter_. Usar `...objeto, ` antes de actualizar la propiedad 
+Al hacer esto las demás propiedades desaparecen y sólo queda la propiedad actualizada en la función _setter_. Usar el operador _spread_ `...` como prefijo del objeto antes de actualizar la propiedad 
+
+El operador `spread` permite que un iterable (ej - array, string) se expanda en elementos separados (desempaqueta)
 
 ```jsx {hl_lines="2"}
 function updateCarYear(event){

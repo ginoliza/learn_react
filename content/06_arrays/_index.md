@@ -33,7 +33,9 @@ El sitio web muestra todos los elementos de corrido
 
 ## map
 
-Mapear un elemento del array a un listado de items
+El método `map` acepta una función _callback_ y la aplica a cada elemento del array, luego retorna un nuevo array. Es muy parecido a un `foreach`
+
+Mapear un elemento `fruit` del array `fruits` a un listado de items
 
 ```jsx {title="List.jsx" hl_lines="2 6"}
 ...
