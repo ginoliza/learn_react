@@ -8,7 +8,7 @@ weight = 8
 Función especial que permite que componentes funcionales usen carácteristicas de React sin escribir componentes clase. Si las funciones comienzan con `use` probablemente son hooks de react. El más usado es `useState`
 
 ## useState
-Hook de React que permite la creación de una variable con estado (_stateful_) y una función _setter_ para actualizar su valor en el DOM Virtual `[name, setName]`
+Hook de React que permite la creación de una variable con estado (_stateful_) y una función _setter_ `[name, setName]` para actualizar su valor en el DOM Virtual y que se vea reflejado en el navegador
 
 Crear un componente, importarlo y usarlo en `App.jsx`. Importar `React, {useState}` de `react`
 ```jsx {title="Component.jsx"}
